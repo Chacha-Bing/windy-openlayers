@@ -357,10 +357,8 @@
 				//implement the particle-wake effect
 				ctx.globalAlpha = 0.8;
 				ctx.globalCompositeOperation = "destination-in";
-				ctx.fillRect(0,0,1348,655);
+				ctx.fillRect(0, 0, mapCanvas.width, mapCanvas.height);
 				ctx.globalCompositeOperation = "source-over";
-
-				ctx.globalAlpha = 0.9;
 				
 				buckets.forEach(function (bucket, i) {
 					ctx.strokeStyle = colorTable[i];
