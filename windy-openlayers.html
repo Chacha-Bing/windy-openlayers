@@ -52,7 +52,7 @@
 	</head>
 	<body>
 		<div id="map" class="map"></div>
-		<canvas id="canvas" class="canvas" width="1348" height="655"></canvas>
+		<canvas id="canvas" class="canvas"></canvas>
 		<div id="showColumn" class="showColumn"></div>
 		<button id="myButton" class="myButton" onclick="postMapRender()">启动</button>
 
@@ -61,7 +61,10 @@
 			var showVelocity = document.getElementById("showColumn");
 			var responseData;
 			var setTimeoutID;
-
+			
+			mapCanvas.width = $(window).get(0).innerWidth;
+			mapCanvas.height = $(window).get(0).innerHeight;
+			
 			var map = new ol.Map({
 				target: 'map',
 				layers:[
