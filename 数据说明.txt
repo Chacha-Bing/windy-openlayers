@@ -1,0 +1,36 @@
+json数据格式说明：
+[{              //两组数据只有data的值是不一样的，这一组的data数据是指风速在X轴即经度轴向上的分量
+    "header": {
+        "parameterUnit": "m.s-1",       //风速单位，未用到
+        "parameterNumber": 2,
+        "dx": 1.0,                      //每个风速数据点之间的x轴向距离是1经度
+        "dy": 1.0,                      //每个风速数据点之间的y轴向距离是1纬度
+        "parameterNumberName": "eastward_wind",
+        "la1": -7.5,                    //起始纬度
+        "la2": -28.5,                   //结束纬度
+        "parameterCategory": 2,
+        "lo1": 143.0,                   //起始经度
+        "lo2": 156.0,                   //结束经度
+        "nx": 14,                       //经度格网数，即lo1->lo2
+        "ny": 22,                       //纬度格网数，即la1->la2
+        "refTime": "2017-02-01 23:00:00"//时间
+    },
+    "data": []
+}, {            //两组数据只有data的值是不一样的，这一组的data数据是指风速在y轴即纬度轴向上的分量
+    "header": {
+        "parameterUnit": "m.s-1",
+        "parameterNumber": 3,
+        "dx": 1.0,
+        "dy": 1.0,
+        "parameterNumberName": "northward_wind",
+        "la1": -7.5,
+        "la2": -28.5,
+        "parameterCategory": 2,
+        "lo1": 143.0,
+        "lo2": 156.0,
+        "nx": 14,
+        "ny": 22,
+        "refTime": "2017-02-01 23:00:00"
+    },
+    "data": []
+}]
