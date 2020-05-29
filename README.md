@@ -1,4 +1,7 @@
 # 基于Openlayers的风力场可视化
+---
+体验网址：[http://bingchacha.top/windy/](http://bingchacha.top/windy/)
+
  &emsp;&emsp;之前在GitHub上看到一个有关风力场的实现，就是说给出一些定点的气象数据（这些可以由分布全球各地的气象站数据得到），然后在地图上可视化这些风力的数据，以显示出其流向以及强度，类似于windy网站的一个效果 <https://www.windy.com/>. 
 
 &emsp;&emsp;不过原项目是用leaflet这个框架来实现的，因为最近在了解 **openlayers**，所以制作了一个openlayers版本的风力场效果，为了方便这里的json数据接口还是使用参照项目的接口，具体的数据描述在数据说明这个txt文件中有说明。
